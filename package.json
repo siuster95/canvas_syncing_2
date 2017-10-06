@@ -1,0 +1,27 @@
+{
+  "name": "canvas_syncing_2",
+  "version": "1.0.0",
+  "description": "A prototype and stepping stone for my othello game ",
+  "main": "./src/server.js",
+  "scripts": {
+    "watch": "babel --watch ./client --out-file ./hosted/bundle.js",
+    "build": "babel ./client --out-file ./hosted/bundle.js",
+    "nodemon": "nodemon --watch ./src ./src/server.js",
+    "start": "node ./src/server.js",
+    "pretest": "eslint ./src --fix",
+    "test": "echo \"Tests complete\""
+  },
+  "author": "Johnny Siu",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.0",
+    "eslint": "^4.7.2",
+    "eslint-config-airbnb": "^15.1.0",
+    "eslint-plugin-import": "^2.7.0",
+    "nodemon": "^1.12.1"
+  },
+  "dependencies": {
+    "socket.io": "^2.0.3"
+  }
+}
